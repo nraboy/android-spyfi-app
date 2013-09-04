@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/camera_info_save"
+        android:title="@string/menu_save" 
+        android:showAsAction="always" />
+    <item android:id="@+id/camera_info_cancel"
+        android:title="@string/menu_cancel" 
+        android:showAsAction="always" />
+</menu>
