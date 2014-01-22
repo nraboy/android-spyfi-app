@@ -29,6 +29,7 @@ Version History
 -------------
 
 2.1.1 - July 10, 2013
+
 * Passwords are no longer required
 * Added Google Analytics
 
