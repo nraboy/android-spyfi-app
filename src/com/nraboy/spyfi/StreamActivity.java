@@ -84,11 +84,11 @@ public class StreamActivity extends Activity {
 
         this.motionController = new MotionController(camera.getHost() + ":" + camera.getPort(), camera.getUsername(), camera.getPassword()); 
 
-        if(!isWifiEnabled()) {
-            this.displayError(getResources().getString(R.string.dialog_title_wifi_error), getResources().getString(R.string.dialog_message_wifi_error));
-        } else {
+        if(isInternetConnected() || isWifiEnabled()) {
             (new Thread(streamControl)).start();
             (new Thread(motionController)).start();
+        } else {
+            this.displayError(getResources().getString(R.string.dialog_title_wifi_error), getResources().getString(R.string.dialog_message_wifi_error));
         }
         
     }

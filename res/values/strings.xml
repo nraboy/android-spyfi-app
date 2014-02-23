@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Spyfi</string>
-    <string name="app_version">2.2.0</string>
+    <string name="app_version">2.2.1</string>
     <string name="app_author">Nic Raboy</string>
     <string name="app_site">http://www.nraboy.com</string>
     <string name="app_support">http://www.nraboy.com/contact</string>
@@ -49,5 +49,5 @@
     <string name="dialog_message_incomplete">Please make sure all fields are complete!</string>
     <string name="dialog_message_please_rate">Please support Spyfi by providing a rating or review of your experience.</string>
     <string name="dialog_message_stream_error">Camera failed to load. Please make sure all connection information is correct and the camera is set up correctly.</string>
-    <string name="dialog_message_wifi_error">Your wireless communications are currently disabled.  Enable them and try again</string>
+    <string name="dialog_message_wifi_error">There is a problem with your internet or wireless connection.  Please check your connections and try again.</string>
 </resources>
