@@ -82,13 +82,15 @@ public class StreamActivity extends Activity {
         this.btnPTZUp.setOnTouchListener(buttonClick);
         this.btnPTZDown.setOnTouchListener(buttonClick);
 
+        this.motionController = new MotionController(camera.getHost() + ":" + camera.getPort(), camera.getUsername(), camera.getPassword()); 
+
         if(!isWifiEnabled()) {
             this.displayError(getResources().getString(R.string.dialog_title_wifi_error), getResources().getString(R.string.dialog_message_wifi_error));
+        } else {
+            (new Thread(streamControl)).start();
+            (new Thread(motionController)).start();
         }
-
-        (new Thread(streamControl)).start();
-        this.motionController = new MotionController(camera.getHost() + ":" + camera.getPort(), camera.getUsername(), camera.getPassword()); 
-        (new Thread(motionController)).start();
+        
     }
 
     /*
@@ -99,7 +101,7 @@ public class StreamActivity extends Activity {
         @Override
         public boolean onTouch(View v, MotionEvent event) {
             if(event.getAction() == MotionEvent.ACTION_DOWN) {
-                ((TextView) v).setTextColor(0xFF00FF00);
+                ((TextView) v).setTextColor(getResources().getColor(R.color.green));
                 switch(v.getId()) {
                     case R.id.ptz_left:
                         motionController.moveLeft(true);
@@ -115,7 +117,7 @@ public class StreamActivity extends Activity {
                         break;
                 }
             } else if (event.getAction() == MotionEvent.ACTION_UP) {
-                ((TextView) v).setTextColor(0xFFFFFFFF);
+                ((TextView) v).setTextColor(getResources().getColor(R.color.white));
                 switch(v.getId()) {
                     case R.id.ptz_left:
                         motionController.moveLeft(false);

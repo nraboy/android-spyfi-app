@@ -22,6 +22,8 @@
     <string name="button_delete">Borrar</string>
     
     <string name="dialog_title_action">Realizar Una Acción</string>
+    <string name="dialog_title_communication_error">Error de comunicación</string>
+    <string name="dialog_title_wifi_error">Error de Wifi</string>
     
     <string name="dialog_message_version">Versión</string>
     <string name="dialog_message_incomplete">Por favor, asegúrese de que todos los espacios estén completos!</string>

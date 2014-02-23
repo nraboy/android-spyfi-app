@@ -1,10 +1,17 @@
 package com.nraboy.spyfi;
 
+/*
+ * Spyfi
+ * Created by Nic Raboy
+ * www.nraboy.com
+ */
+
 import com.nraboy.spyfi.objects.*;
 import java.util.*;
 import android.widget.*;
 import android.view.*;
 import android.content.*;
+import android.util.*;
 
 public class CameraListAdapter extends BaseAdapter {
 
@@ -42,7 +49,7 @@ public class CameraListAdapter extends BaseAdapter {
             tvTitle.setText(this.cameraList.get(position).getTitle());
             tvHost.setText(this.cameraList.get(position).getHost());
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.d(this.context.getResources().getString(R.string.app_name), e.getMessage(), e);
         }
         return convertView;
     }

@@ -3,11 +3,12 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="Hello World, SplashActivity"
-    />
+    android:gravity="center" >
+    <TextView
+        android:text="Loading..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_gravity="center" 
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 </LinearLayout>
-

@@ -1,5 +1,11 @@
 package com.nraboy.spyfi;
 
+/*
+ * Spyfi
+ * Created by Nic Raboy
+ * www.nraboy.com
+ */
+
 import java.net.*;
 
 public class PortScanner {

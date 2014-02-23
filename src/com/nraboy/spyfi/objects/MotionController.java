@@ -1,5 +1,11 @@
 package com.nraboy.spyfi;
 
+/*
+ * Spyfi
+ * Created by Nic Raboy
+ * www.nraboy.com
+ */
+
 import org.apache.http.message.*;
 import org.apache.http.client.methods.*;
 import org.apache.http.impl.client.*;
@@ -50,6 +56,13 @@ public class MotionController implements Runnable {
         this.moveDown = moveDown;
     }
 
+    /*
+     * Check whether motion start or motion stop has happened.  When a command 
+     * has happened, send it to the camera
+     *
+     * @param
+     * @return
+     */
     @Override
     public void run() {
         while(this.isActive) {
@@ -84,6 +97,12 @@ public class MotionController implements Runnable {
         }
     }
 
+    /*
+     * Send the motion command to the camera
+     *
+     * @param    String cmd
+     * @return   String
+     */
     private String send(String cmd) {
         String result = "";
         HttpClient httpclient = new DefaultHttpClient();
@@ -98,6 +117,12 @@ public class MotionController implements Runnable {
         return result;
     }
 
+    /*
+     * Get whether the camera is moving in any direction
+     *
+     * @param
+     * @return   boolean
+     */
     public boolean hasMotion() {
         return isMovingLeft || isMovingRight || isMovingUp || isMovingDown ? true : false;
     }
