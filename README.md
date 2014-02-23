@@ -9,7 +9,7 @@ Building with Ant (Android)
 -------------
 
 There are two files that must edited.  The `local.properties` file found in both the root 
-of the project as well as in the ActionBarSherlock library must be edited so the `sdk.dir` points 
+of the project as well as in the GooglePlayServices library must be edited so the `sdk.dir` points 
 to the actual install location of the Android SDK.
 
 Once the two files have been edited you can build two different ways.
@@ -28,6 +28,13 @@ If you would just like to use Ant with the shipped Android tools you can always 
 Version History
 -------------
 
+2.2.0 - TBA
+
+* PTZ support
+* Optimized for Android 4.0+
+* Better error reporting
+* Non-intrusive banner advertisement added to the start screen
+
 2.1.1 - July 10, 2013
 
 * Passwords are no longer required
@@ -37,7 +44,7 @@ Version History
 Have a question or found a bug (compliments work too)?
 -------------
 
-Email me via my website - [http://www.nraboy.com](http://www.nraboy.com/index/contact)
+Email me via my website - [http://www.nraboy.com](http://www.nraboy.com/contact)
 
 Tweet me on Twitter - [@nraboy](https://www.twitter.com/nraboy)
 

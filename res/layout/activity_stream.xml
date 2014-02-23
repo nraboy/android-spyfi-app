@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/streamlayout">
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <ImageView
+            android:id="@+id/stream"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/controls" />
+        <RelativeLayout
+            android:id="@+id/controls"
+            android:layout_width="80dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/ptz_left"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:padding="20dp"
+                    android:textSize="40sp"
+                    android:text="\uF060" />
+                <TextView
+                    android:id="@+id/ptz_right"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:padding="20dp"
+                    android:textSize="40sp"
+                    android:text="\uF061" />
+                <TextView
+                    android:id="@+id/ptz_up"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:padding="20dp"
+                    android:textSize="40sp"
+                    android:text="\uF062" />
+                <TextView
+                    android:id="@+id/ptz_down"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#FFFFFF"
+                    android:padding="20dp"
+                    android:textSize="40sp"
+                    android:text="\uF063" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

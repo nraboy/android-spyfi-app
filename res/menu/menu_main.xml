@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/add"
+        android:menuCategory="system"
+        android:orderInCategory="1"
+        android:icon="@drawable/ic_action_new"
+        android:title="@string/menu_add"
+        android:showAsAction="always" />
+    <item android:id="@+id/settings"
+        android:menuCategory="system"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/menu_settings"
+        android:showAsAction="never" />
+</menu>

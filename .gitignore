@@ -1,8 +1,5 @@
-Android/bin/
-Android/gen/
-Android/nraboy.keystore
-Android/libs/ActionBarSherlock/bin/
-Android/libs/ActionBarSherlock/gen/
+bin/
+gen/
+nraboy.keystore
 .DS_Store*
 *~
-iOS/build/*
