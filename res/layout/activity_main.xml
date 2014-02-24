@@ -22,7 +22,7 @@
         android:id="@+id/ad_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        ads:adUnitId="ca-app-pub-8504140913961629/4551047564"
+        ads:adUnitId="AD UNIT ID HERE"
         ads:adSize="SMART_BANNER"
         android:layout_alignParentBottom="true" />
 </RelativeLayout>

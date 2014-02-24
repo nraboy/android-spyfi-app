@@ -5,6 +5,15 @@ Mobile surveillance application for use with Foscam and Yanmix brand IP cameras.
 also work with other cameras as long as they use the same API as Foscam and Yanmix.
 
 
+Add Google Analytics and AdMob codes
+-------------
+
+If you wish to track analytic information, find the `./res/values/analytics.xml` file and include 
+your unique tracking value at the top in the specified location.  If you wish to make money off this 
+application (I'm hoping not), find the `./res/layout/activity_main.xml` file and include your unique 
+AdMob unit identification value.
+
+
 Building with Ant (Android)
 -------------
 
@@ -28,7 +37,11 @@ If you would just like to use Ant with the shipped Android tools you can always 
 Version History
 -------------
 
-2.2.0 - TBA
+2.2.1 - February 23, 2014
+
+* Fix error that prevented cellular users from viewing the camera stream
+
+2.2.0 - February 23, 2014
 
 * PTZ support
 * Optimized for Android 4.0+
