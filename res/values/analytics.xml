@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="ga_trackingId">ANALYTICS TRACKING CODE HERE</string>
+    <string name="ga_trackingId">ANALYTICS ID HERE</string>
     <bool name="ga_autoActivityTracking">true</bool>
     <bool name="ga_reportUncaughtExceptions">true</bool>
 </resources>

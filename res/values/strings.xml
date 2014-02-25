@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Spyfi</string>
-    <string name="app_version">2.2.1</string>
+    <string name="app_version">2.2.2</string>
     <string name="app_author">Nic Raboy</string>
     <string name="app_site">http://www.nraboy.com</string>
     <string name="app_support">http://www.nraboy.com/contact</string>
     <string name="app_twitter">https://www.twitter.com/nraboy</string>
-    <string name="app_store">https://play.google.com/store/apps/details?id=com.nraboy.spyfi</string>
+    <string name="app_market">Google Play Edition</string>
+    <string name="app_store_google">https://play.google.com/store/apps/details?id=com.nraboy.spyfi</string>
+    <string name="app_store_amazon">http://www.amazon.com/Nic-Raboy-Spyfi/dp/B0097UHJDA</string>
     
     <string name="activity_camerainfo">Camera Info</string>
     <string name="activity_settings">Settings</string>

@@ -89,7 +89,7 @@ public class CameraInfoActivity extends Activity {
         switch (item.getItemId()) {
             case R.id.save:
                 Camera c = this.process();
-                if(!c.getTitle().equals("") && !c.getHost().equals("") && !c.getPort().equals("") && !c.getUsername().equals("") && !c.getPassword().equals("")) {
+                if(!c.getTitle().equals("") && !c.getHost().equals("") && !c.getPort().equals("") && !c.getUsername().equals("")) {
                     if(this.cameraId == 0) {
                         this.datasource.insert(c);
                     } else {

@@ -37,6 +37,10 @@ If you would just like to use Ant with the shipped Android tools you can always 
 Version History
 -------------
 
+2.2.2 - TBA
+
+* Make passwords no longer required again because they were required by accident in 2.2+
+
 2.2.1 - February 23, 2014
 
 * Fix error that prevented cellular users from viewing the camera stream

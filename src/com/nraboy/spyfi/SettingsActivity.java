@@ -32,7 +32,8 @@ public class SettingsActivity extends PreferenceActivity {
         appTwitter = (Preference) findPreference("pref_key_app_twitter");
         appRate.setOnPreferenceClickListener(new OnPreferenceClickListener() {
             public boolean onPreferenceClick(Preference preference) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(getResources().getString(R.string.app_store)));
+                String app_store = getResources().getString(R.string.app_market).equals("Google Play Edition") ? getResources().getString(R.string.app_store_google) : getResources().getString(R.string.app_store_amazon);
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(app_store));
                 startActivity(browserIntent);
                 return true;
             }
